@@ -1,0 +1,23 @@
+#nav {
+  position: relative;
+  .search-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
+    & > * {
+      display: inline-block;
+    }
+
+    .form-control {
+      width: 300px;
+      margin-right: 20px;
+    }
+
+    button {
+      height: 34px;
+      line-height: 34px;
+      padding: 0 10px;
+    }
+  }
+}

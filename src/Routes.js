@@ -4,6 +4,7 @@ import Loadable from 'react-loadable'
 
 /* Import the components */
 import AppliedRoute from './components/AppliedRoute'
+import MainRoute from './components/MainRoute'
 import LoadingComponent from './components/LoadingComponent'
 
 const AsyncHome = Loadable({
@@ -14,7 +15,7 @@ const AsyncHome = Loadable({
 /* Use components to define routes */
 export default ({ childProps }) =>
   <Switch>
-    <AppliedRoute exact path='/' component={AsyncHome} props={childProps} />
+    <MainRoute exact path='/' component={AsyncHome} props={childProps} />
 
     {/* Finally, catch all unmatched routes */}
     {/* <Route component={AsyncNotFound} /> */}
