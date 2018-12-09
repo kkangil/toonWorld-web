@@ -1,0 +1,35 @@
+/* Footer */
+.footer {
+  margin-top: 50px;
+  padding: 100px 50px;
+  background-color: #aaa;
+
+  &__info {
+    & > * {
+      font-size: 10px;
+      line-height: 1.8;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    &--link {
+      display: inline-block;
+      color: #ffffff;
+      margin-right: 20px;
+      font-size: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+
+    &--text {
+      margin-top: 30px;
+    }
+  }
+}

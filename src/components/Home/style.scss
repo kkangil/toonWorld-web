@@ -1,0 +1,115 @@
+#main {
+  .section {
+    .more {
+      float: right;
+      margin-top: 10px;
+      background: url(/images/common/plus.svg) no-repeat transparent;
+      width: 21px;
+      height: 21px;
+      border: none;
+      border-radius: 50%;
+
+      &:hover {
+        background-image: url(/images/common/plus-hover.svg);
+      }
+    }
+    &-cartoon {
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 0;
+        border-bottom: 1px solid #000;
+        margin-bottom: 20px;
+      }
+      .row-container {
+        width: 100%;
+        padding: 0;
+  
+        &:after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+  
+        .cartoon__row {
+          width: calc(100% / 7 - 13px);
+          height: 200px;
+          margin: 0 15px 0 0;
+          float: left;
+  
+          .cartoon {
+            &__thumnail {
+              display: inline-block;
+              width: 100%;
+              height: 150px;
+              background: #aaa;
+              border: 1px solid #000;
+              box-sizing: border-box;
+            }
+            &__title {
+              text-align: center;
+              height: 50px;
+              line-height: 50px;
+            }
+          }
+  
+  
+  
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    &-board {
+      display: inline-block;
+      width: calc(50% - 5px);
+      border: 1px solid #000;
+      box-sizing: border-box;
+      height: 300px;
+      padding: 10px 5px;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .board {
+        &__title {
+          font-size: 18px;
+          text-align: center;
+          margin: 20px 0;
+        }
+
+        &__container {
+          .board__row {
+            padding: 10px;
+            cursor: pointer;
+
+            &:hover {
+              p {
+                text-decoration: underline;
+              }
+            }
+
+            p {
+              margin: 0;
+              display: inline-block;
+              width: calc(100% - 50px);
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+            span {
+              float: right;
+              width: 50px;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
