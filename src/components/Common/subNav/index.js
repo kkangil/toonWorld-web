@@ -6,16 +6,16 @@ export default class SubNavComponent extends React.Component {
     return (
       <Grid>
         <Nav bsStyle="pills" activeKey={1}>
-          <NavItem href="#">
+          <NavItem href="/cartoons">
             연재 만화
           </NavItem>
-          <NavItem href="/#">
+          <NavItem href="/cartoons">
             완결 만화
           </NavItem>
-          <NavItem href="/#">
+          <NavItem href="/cartoons">
             소설
           </NavItem>
-          <NavItem href="/#">
+          <NavItem href="/cartoons">
             웹 만화
           </NavItem>
           <NavItem href="/#">
