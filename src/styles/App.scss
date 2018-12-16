@@ -45,3 +45,13 @@
 .pagination > li {
   display: inline-block;
 }
+
+#sub-nav {
+  .nav-title {
+    margin-right: 10px;
+
+    &.last {
+      margin-right: 0;
+    }
+  }
+}

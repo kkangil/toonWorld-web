@@ -1,26 +1,27 @@
 import React from 'react'
-import { Grid, Nav, NavItem } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { Grid, Nav } from 'react-bootstrap'
 
 export default class SubNavComponent extends React.Component {
   render() {
     return (
-      <Grid>
+      <Grid id="sub-nav">
         <Nav bsStyle="pills" activeKey={1}>
-          <NavItem href="/cartoons">
+          <Link className="nav-title" to="/cartoons">
             연재 만화
-          </NavItem>
-          <NavItem href="/cartoons">
+          </Link>
+          <Link className="nav-title" to="/cartoons">
             완결 만화
-          </NavItem>
-          <NavItem href="/cartoons">
+          </Link>
+          <Link className="nav-title" to="/cartoons">
             소설
-          </NavItem>
-          <NavItem href="/cartoons">
+          </Link>
+          <Link className="nav-title" to="/cartoons">
             웹 만화
-          </NavItem>
-          <NavItem href="/#">
+          </Link>
+          <Link className="nav-title last" to="/#">
             게시판
-          </NavItem>
+          </Link>
         </Nav>
       </Grid>
     )
